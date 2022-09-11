@@ -1,11 +1,13 @@
 package ro.sda.javaro39.spring_Predare.Exercitiu8;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/GET/api")
+@RequestMapping(path = "/api")
 public class FirstController {
     RandomBooleanProvider randomBooleanProvider;
 
@@ -13,7 +15,7 @@ public class FirstController {
         this.randomBooleanProvider = randomBooleanProvider;
     }
 
-    @RequestMapping(path = "/getValue")
+    @GetMapping("/random-boolean")
     public boolean getValue() {
         return randomBooleanProvider.getValue();
     }

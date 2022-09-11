@@ -1,4 +1,4 @@
-package ro.sda.javaro39.spring_Predare.Exercitiu9;
+package ro.sda.javaro39.spring_Predare.Exercitiu9.entities;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -15,8 +15,8 @@ public class FileData {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String file_name;
+    private String fileName;
     private String extension;
-    private String size_in_kb;
+    private Integer sizeInKb;
     private String content;
 }

@@ -1,9 +1,7 @@
-package ro.sda.javaro39.spring_Predare.Exercitiu9;
+package ro.sda.javaro39.spring_Predare.Exercitiu9.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
-
-import java.util.List;
+import ro.sda.javaro39.spring_Predare.Exercitiu9.entities.FileData;
 
 public interface FileDataRepository extends JpaRepository<FileData,Integer> {
 
